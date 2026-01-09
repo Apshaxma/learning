@@ -1,8 +1,16 @@
-import pandas as pd
+print("Welcome to Commmand line interface Calulator")
 
-print("hello world ")
+op = input("Select the Operator + - * /")
+a = int(input("Enter the First Number"))
+b = int(input("Enter the Second Number"))
 
-data = pd.read_csv("train.csv")
-print(data.head())
-
-data.isna().sum()
+if op == "+":
+    print(a+b)
+elif op == "-":
+    print(a-b)
+elif op == "*":
+    print(a*b)
+elif op == "/":
+    print(a/b)
+else:
+    print("Invalid Operator")
